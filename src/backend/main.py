@@ -61,13 +61,14 @@ app.add_middleware(
 )
 
 # ---------------------------------------------------------------------------
-# Routers — uncommented phase by phase as routes are implemented
+# Routers
 # ---------------------------------------------------------------------------
-# from api.routes.signals       import router as signals_router       # Phase 9
+from api.routes.signals import router as signals_router
+app.include_router(signals_router, prefix="/api/signals", tags=["Signal Detection"])
+
+# Uncommented as phases are implemented:
 # from api.routes.dossier       import router as dossier_router       # Phase 9
 # from api.routes.traceability  import router as traceability_router  # Phase 9
-
-# app.include_router(signals_router,      prefix="/api/signals",      tags=["Signal Detection"])
 # app.include_router(dossier_router,      prefix="/api/dossier",      tags=["Dossier Readiness"])
 # app.include_router(traceability_router, prefix="/api/traceability", tags=["Traceability"])
 
