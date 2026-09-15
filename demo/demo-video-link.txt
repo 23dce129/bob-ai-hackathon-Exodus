@@ -1,15 +1,5 @@
-https://youtu.be/REPLACE-WITH-REAL-URL
+https://youtu.be/O1_MRjKTnp0
 
-TODO: Replace the URL on line 1 above with the real demo video link before submission.
+Demo video for PharmaGuard AI — IBM Bob AI Hackathon submission by Team Exodus.
 
-Accepted platforms:
-  - YouTube (public or unlisted)
-  - Loom (https://www.loom.com/share/...)
-  - IBM Box (https://ibm.box.com/s/...)
-  - Google Drive (set to "Anyone with the link can view")
-
-Video requirements:
-  - Length: 3–5 minutes maximum
-  - Must show the application running (not just slides)
-  - Should walk through at least one key feature end-to-end
-  - Audio narration strongly recommended
+Platform: YouTube
