@@ -9,11 +9,11 @@
 # =============================================================================
 
 team:
-  name: ""                             # REQUIRED — e.g., "Orion Squad"
-  track: ""                            # REQUIRED — one of: AI | DevOps | Sustainability | Open
+  name: "Exodus"                       # REQUIRED — e.g., "Orion Squad"
+  track: "AI"                          # REQUIRED — one of: AI | DevOps | Sustainability | Open
   lead:
-    name: ""                           # REQUIRED — e.g., "Alice Chen"
-    email: ""                          # REQUIRED — e.g., "alice.chen@ibm.com"
+    name: "Vansh Vyas"                 # REQUIRED — e.g., "Alice Chen"
+    email: "23dce129@charusat.edu.in"  # REQUIRED — e.g., "alice.chen@ibm.com"
   members:
     - name: ""                         # REQUIRED — Team member 1
       email: ""
@@ -23,37 +23,50 @@ team:
       email: ""
 
 submission:
-  title: ""                            # REQUIRED — Project display name, e.g., "SmartOps Dashboard"
+  title: "PharmaGuard AI"              # REQUIRED — Project display name
 
   problem_statement: >                 # REQUIRED — 1-3 sentences. What problem? Who has it?
-    Replace this text with a concise description of the real-world problem
-    your project addresses and who experiences it.
+    Pharmacovigilance teams manually sift through thousands of FDA FAERS reports
+    to detect adverse drug reaction signals — a process that is slow, error-prone,
+    and requires deep specialist expertise. Drug safety scientists and regulatory
+    affairs professionals lack an integrated tool that combines statistical signal
+    detection, dossier completeness checking, and CTD section traceability in a
+    single workflow.
 
   solution_summary: >                  # REQUIRED — 1-3 sentences. What did you build?
-    Replace this text with a clear description of your solution
-    and how it addresses the problem above.
+    PharmaGuard AI is a full-stack pharmacovigilance platform that automatically
+    detects adverse drug reaction safety signals from FDA FAERS data using
+    Proportional Reporting Ratio (PRR) analysis, scores and ranks signals by
+    clinical priority, checks ICH M4 CTD dossier completeness, and traces each
+    signal to the required regulatory submission sections — all through a React
+    dashboard and an IBM Bob-integrated MCP server.
 
   key_features:                        # REQUIRED — List 3 to 5 specific features you implemented
-    - ""                               # e.g., "Real-time pipeline anomaly detection using watsonx.ai"
-    - ""
-    - ""
-    - ""                               # optional 4th
-    - ""                               # optional 5th
+    - "PRR-based ADR signal detection with 95% CI, chi-squared/Fisher test, and configurable thresholds"
+    - "Multi-dimensional priority scoring combining PRR strength, report volume, trend direction, serious outcome rate, and cluster context"
+    - "ICH M4 CTD dossier readiness checker with weighted per-module (M1–M5) completeness scoring"
+    - "Signal-to-CTD section traceability engine linking each flagged ADR to the regulatory sections that must document it"
+    - "IBM Bob MCP server integration exposing the full pharmacovigilance pipeline as Bob-callable AI tools"
 
   tech_stack:
-    languages: []                      # REQUIRED — e.g., ["Python", "TypeScript"]
-    frameworks: []                     # e.g., ["FastAPI", "React"]
-    ibm_technologies: []               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
-    databases: []                      # e.g., ["PostgreSQL", "Redis"]
-    other: []                          # e.g., ["Docker", "GitHub Actions", "Slack API"]
+    languages: ["Python", "TypeScript"]
+    frameworks: ["FastAPI", "React", "Vite", "Tailwind CSS", "Pydantic"]
+    ibm_technologies: ["IBM watsonx.ai", "IBM Bob", "IBM Bob MCP Server"]
+    databases: ["DuckDB"]
+    other: ["Uvicorn", "pytest", "pandas", "scikit-learn", "scipy", "Recharts", "react-router-dom"]
 
-  what_we_are_most_proud_of: >         # Optional but recommended — guides judges to your best work
-    Replace with what aspect of the submission you consider strongest
-    and want judges to pay special attention to.
+  what_we_are_most_proud_of: >         # Optional but recommended
+    The end-to-end signal traceability engine that links a detected statistical
+    ADR signal directly to the specific ICH M4 CTD regulatory sections that must
+    document it, and the IBM Bob MCP integration that makes every pipeline
+    capability available as a conversational tool directly inside Bob.
 
-  known_limitations: >                 # Optional but recommended — be honest about gaps
-    Replace with any known limitations, incomplete features,
-    or shortcuts taken due to time constraints.
+  known_limitations: >                 # Optional but recommended
+    Uses a bundled synthetic FAERS sample dataset (~500 rows), not a live FDA
+    FAERS database connection. The watsonx.ai narrative generation is optional —
+    all endpoints work deterministically without credentials. No user
+    authentication is implemented. The frontend is a hackathon prototype and is
+    not production-hardened.
 
 # =============================================================================
 # ARTIFACT LOCATIONS

@@ -256,3 +256,123 @@ def get_priority_scores(
         "priority_scores": [ps.to_dict() for ps in priority_scores],
         "disclaimer": priority_scores[0].disclaimer if priority_scores else "",
     }
+
+
+@router.get(
+    "/explain/{drug_name}/{adverse_event}",
+    summary="Structured AI-style explanation for a single flagged signal",
+)
+def explain_signal(drug_name: str, adverse_event: str):
+    """
+    Generate a structured, evidence-grounded explanation for one (drug, event) pair.
+
+    The explanation is assembled from:
+      - PRR + 95% CI
+      - Report volume and serious outcome rate
+      - Temporal trend direction and quarterly counts
+      - Priority score components
+      - Statistical test method and p-value
+      - Cluster context
+
+    No external LLM call is made. All text is composed deterministically from the
+    pipeline outputs so the endpoint is always available regardless of watsonx config.
+
+    Returns 404 if the pair is not found in the sample dataset.
+    """
+    df = _load_sample()
+    drug  = drug_name.lower().strip()
+    event = adverse_event.lower().strip()
+
+    pair_mask = (df["drug_name"] == drug) & (df["adverse_event"] == event)
+    if not pair_mask.any():
+        raise HTTPException(
+            status_code=404,
+            detail=f"No reports found for drug='{drug}' / event='{event}'.",
+        )
+
+    # ── PRR signal ──────────────────────────────────────────────────────────
+    signals = calculate_all_signals(df, min_cases=1, min_prr=1.0, max_pval=1.0, drug_filter=drug)
+    sig = next((s for s in signals if s.adverse_event == event), None)
+    if sig is None:
+        raise HTTPException(status_code=404, detail=f"Could not compute PRR for '{drug}/{event}'.")
+
+    # ── Trend ────────────────────────────────────────────────────────────────
+    from core.temporal_analyser import analyse_trend
+    trend = analyse_trend(df, drug, event)
+
+    # ── Priority score ───────────────────────────────────────────────────────
+    clusters = cluster_reports(df)
+    from core.priority_scorer import score_signal
+    ps = score_signal(sig, df, trend=trend, clusters=clusters)
+
+    # ── Serious outcomes raw rate ─────────────────────────────────────────────
+    _SERIOUS_CODES = frozenset({"DE", "LT", "HO", "DS", "CA", "RI"})
+    subset = df.loc[pair_mask]
+    total_reports = len(subset)
+    serious_count = int(subset["outcome_code"].isin(_SERIOUS_CODES).sum())
+    serious_rate  = round(serious_count / total_reports, 4) if total_reports else 0.0
+
+    # ── Compose narrative paragraphs ─────────────────────────────────────────
+    def _fmt_prr(v):
+        return f"{v:.2f}" if v is not None else "undefined"
+    def _fmt_p(v):
+        if v is None:  return "unavailable"
+        if v < 0.001:  return "< 0.001"
+        return f"{v:.4f}"
+
+    ci_text = (
+        f"[{sig.ci_lower_95:.2f}, {sig.ci_upper_95:.2f}]"
+        if sig.ci_lower_95 is not None else "not calculable (insufficient denominator reports)"
+    )
+    trend_sentence = {
+        "increasing":        f"Reporting has been INCREASING (+{trend.pct_change:.1f}% recent vs. prior period), which raises the urgency of this signal.",
+        "decreasing":        f"Reporting has been DECREASING ({trend.pct_change:.1f}% recent vs. prior period), suggesting the signal may be resolving.",
+        "stable":            f"Reporting is STABLE across the observation period, indicating a persistent but non-escalating pattern.",
+        "insufficient_data": "Insufficient date data is available to determine a reporting trend.",
+    }.get(trend.direction, "Trend direction could not be determined.")
+
+    paragraphs = [
+        f"**Signal overview:** {drug.title()} is disproportionately associated with {event} in the FAERS sample dataset. "
+        f"The Proportional Reporting Ratio (PRR) is {_fmt_prr(sig.prr)} (95% CI {ci_text}), which exceeds the FDA/EMA signal detection threshold of PRR ≥ 2.0. "
+        f"This is a statistical disproportionality measure — it does NOT establish that {drug.title()} causes {event}.",
+
+        f"**Evidence volume:** {total_reports} report(s) were identified for this drug-event pair. "
+        f"Of these, {serious_count} ({serious_rate * 100:.1f}%) involved a serious outcome code "
+        f"(Death, Life-threatening, Hospitalisation, Disability, Congenital anomaly, or Required intervention).",
+
+        f"**Statistical test:** The {sig.test_method.upper()} test yielded p = {_fmt_p(sig.p_value)}, "
+        f"{'confirming' if sig.p_value is not None and sig.p_value < 0.05 else 'not meeting'} the p < 0.05 significance threshold. "
+        + (f"Chi-squared statistic: {sig.chi2_statistic:.3f}." if sig.chi2_statistic else ""),
+
+        f"**Temporal trend ({trend.date_range_start} – {trend.date_range_end}):** {trend_sentence} "
+        f"Recent half: {trend.recent_count} reports. Prior half: {trend.previous_count} reports. "
+        f"Trend score: {trend.trend_score:+.4f} (range −1 to +1).",
+
+        f"**Priority score:** {ps.final_score}/{ps.config.max_score} (screening heuristic only). "
+        + "  ".join(c.summary_line() for c in ps.components) + ".",
+
+        "**Limitations:** Results are derived from a synthetic demonstration dataset (~500 rows). "
+        "Statistical associations require clinical literature review and expert pharmacovigilance assessment before any regulatory or clinical action.",
+    ]
+
+    return {
+        "drug_name":      drug,
+        "adverse_event":  event,
+        "prr":            sig.prr,
+        "ci_lower_95":    sig.ci_lower_95,
+        "ci_upper_95":    sig.ci_upper_95,
+        "p_value":        sig.p_value,
+        "chi2_statistic": sig.chi2_statistic,
+        "test_method":    sig.test_method,
+        "total_reports":  total_reports,
+        "serious_count":  serious_count,
+        "serious_rate":   serious_rate,
+        "trend_direction": trend.direction,
+        "trend_score":    trend.trend_score,
+        "pct_change":     trend.pct_change,
+        "priority_score": ps.final_score,
+        "max_score":      ps.config.max_score,
+        "components":     [c.to_dict() for c in ps.components],
+        "explanation_paragraphs": paragraphs,
+        "disclaimer": ps.disclaimer,
+    }

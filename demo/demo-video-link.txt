@@ -1,6 +1,6 @@
-https://youtu.be/your-demo-video-link-here
+https://youtu.be/REPLACE-WITH-REAL-URL
 
-Replace the URL above with a link to your demo video.
+TODO: Replace the URL on line 1 above with the real demo video link before submission.
 
 Accepted platforms:
   - YouTube (public or unlisted)
