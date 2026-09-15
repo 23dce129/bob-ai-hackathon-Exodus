@@ -1,5 +1,8 @@
 # --- Web framework ---
-fastapi>=0.111.0
+# Pinned: fastapi 0.115.0+ requires Starlette ≥1.6 which has a breaking change
+# in Router.__init__. Pin to <0.115.0 until upstream is resolved.
+fastapi>=0.111.0,<0.115.0
+starlette>=0.37.2,<0.39.0
 uvicorn[standard]>=0.29.0
 python-multipart>=0.0.9
 

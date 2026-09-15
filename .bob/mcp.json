@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "pharmaguard": {
+      "command": "python",
+      "args": ["D:\\Tp\\bob-ai-hackathon-Exodus\\src\\mcp-server\\server.py"],
+      "env": {
+        "PHARMAGUARD_API_URL": "http://localhost:8000",
+        "PHARMAGUARD_MCP_TIMEOUT": "30",
+        "PHARMAGUARD_MCP_MAX_RESULTS": "10"
+      }
+    }
+  }
+}

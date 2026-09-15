@@ -118,3 +118,85 @@ def tmp_parquet(tmp_path: Path) -> Path:
 def tmp_duckdb(tmp_path: Path) -> Path:
     """Return a temporary .duckdb file path inside pytest's tmp_path."""
     return tmp_path / "test_faers.duckdb"
+
+
+# ---------------------------------------------------------------------------
+# Traceability fixtures
+# ---------------------------------------------------------------------------
+
+@pytest.fixture(scope="session")
+def kb():
+    """Loaded CTD knowledge base singleton."""
+    from core.ctd_knowledge_base import load_knowledge_base  # noqa: PLC0415
+    return load_knowledge_base()
+
+
+@pytest.fixture(scope="session")
+def empty_match_summary():
+    """A MatchSummary with zero rows — simulates an empty dossier."""
+    from core.section_matcher import MatchSummary  # noqa: PLC0415
+    return MatchSummary(total_rows=0)
+
+
+@pytest.fixture(scope="session")
+def bleeding_signal() -> dict:
+    """A synthetic signal dict for warfarin / haemorrhage (bleeding category)."""
+    return {
+        "drug_name": "warfarin",
+        "adverse_event": "haemorrhage",
+        "prr": 7.2,
+        "p_value": 0.001,
+        "signal_flag": True,
+    }
+
+
+@pytest.fixture(scope="session")
+def hepato_signal() -> dict:
+    """A synthetic signal dict for atorvastatin / hepatotoxicity."""
+    return {
+        "drug_name": "atorvastatin",
+        "adverse_event": "hepatotoxicity",
+        "prr": 3.5,
+        "p_value": 0.02,
+        "signal_flag": True,
+    }
+
+
+@pytest.fixture(scope="session")
+def full_match_summary(kb):
+    """
+    A MatchSummary that marks every KB section as PRESENT (confidence 1.0).
+    Used to test the fully-documented path (score == 1.0).
+    """
+    from core.dossier_parser import DossierRow  # noqa: PLC0415
+    from core.section_matcher import (  # noqa: PLC0415
+        MatchSummary, SectionMatch, MatchType, MatchStatus,
+    )
+
+    matches = []
+    for i, section in enumerate(kb.all_sections()):
+        row = DossierRow(
+            row_index=i,
+            section_number=section.id,
+            section_title=section.title,
+            description="",
+            source="",
+            status="present",
+        )
+        matches.append(SectionMatch(
+            dossier_row=row,
+            expected_section=section,
+            match_type=MatchType.EXACT_NUMBER,
+            confidence=1.0,
+            status=MatchStatus.PRESENT,
+            match_reason="fixture: all sections marked PRESENT",
+            status_source="dossier_supplied",
+        ))
+
+    summary = MatchSummary(
+        matches=matches,
+        total_rows=len(matches),
+        exact_number_count=len(matches),
+    )
+    summary.status_counts = {"PRESENT": len(matches)}
+    return summary

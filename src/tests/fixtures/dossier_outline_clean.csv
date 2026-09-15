@@ -1,0 +1,76 @@
+section_number,section_title,description,source,status
+1.1,Comprehensive Table of Contents,TOC covers Modules 1–5. Cross-reference index included.,M1/1.1_table_of_contents_v3.pdf,present
+1.2,Application Form,FDA Form 356h signed by qualified person. NDA submission.,M1/1.2_FDA_form_356h_signed.pdf,present
+1.3,Product Information,Proposed package insert submitted. Warnings and Precautions section contains placeholder text '[TO BE UPDATED AFTER FINAL SAFETY REVIEW]'. Adverse Reactions table references clinical data from study SYN-301 which is listed as ongoing in Section 5.3.5. Requires reconciliation before final submission.,M1/1.3_proposed_labeling_draft.pdf,needs_review
+1.4,Information about the Experts,"Declarations from three qualified experts covering quality, nonclinical, and clinical modules.",M1/1.4_expert_declarations.pdf,present
+1.5,Specific Requirements for Different Types of Applications,Paragraph IV certification submitted. No exclusivity claims.,M1/1.5_patent_certification.pdf,present
+1.6,Environmental Risk Assessment,Categorical exclusion claimed under 21 CFR 25.31(a). Small-molecule oral tablet. No significant environmental impact anticipated.,M1/1.6_era_categorical_exclusion.pdf,present
+1.7,Clinical Microbiology,Not applicable. Synvastatin hydrochloride is a lipid-lowering agent; no antimicrobial indication or activity.,,not_applicable
+1.8,Pharmacovigilance,"MISSING — No Risk Management Plan (RMP), no REMS proposal, and no pharmacovigilance plan submitted. The drug has a known hepatotoxicity signal detected in FAERS analysis (PRR 4.2, p < 0.001). A pharmacovigilance plan addressing this signal is required before NDA approval. This is a critical gap.",,missing
+1.9,Case Report Forms and Individual Patient Listings,"Individual patient listings for Studies SYN-101, SYN-201, SYN-301 provided in eCTD format.",M1/1.9_patient_listings/,present
+2.1,Table of Contents of Module 2,,M2/2.1_module2_toc.pdf,present
+2.2,Introduction,Brief introduction to the clinical development program. Covers Phase 1–3 studies.,M2/2.2_introduction.pdf,present
+2.3,Quality Overall Summary,Complete QOS for drug substance and drug product. Validated analytical methods included.,M2/2.3_quality_overall_summary.pdf,present
+2.4,Nonclinical Overview,"MISSING — Nonclinical overview not submitted. Pharmacology, PK, and toxicology data are present in Modules 4 and 2.6, but the integrated nonclinical overview (2.4) required by ICH M4 has not been prepared. This is a required section for NDA submissions.",,missing
+2.5,Clinical Overview,Clinical overview present but benefit-risk assessment section is incomplete. Hepatotoxicity signal identified in post-Phase 3 FAERS analysis is not discussed. Section 6 (Benefit-Risk) ends with '[DRAFT — UNDER MEDICAL REVIEW]'. The overview does not acknowledge the myalgia cluster identified in the signal analysis.,M2/2.5_clinical_overview_draft2.pdf,needs_review
+2.6,Nonclinical Written and Tabulated Summaries,,M2/2.6_nonclinical_summaries/,present
+2.6.1,Introduction,,M2/2.6_nonclinical_summaries/2.6.1_intro.pdf,present
+2.6.2,Pharmacology Written Summary,,M2/2.6_nonclinical_summaries/2.6.2_pharmacology_written.pdf,present
+2.6.3,Pharmacology Tabulated Summary,,M2/2.6_nonclinical_summaries/2.6.3_pharmacology_tabulated.pdf,present
+2.6.4,Pharmacokinetics Written Summary,,M2/2.6_nonclinical_summaries/2.6.4_pk_written.pdf,present
+2.6.5,Pharmacokinetics Tabulated Summary,,M2/2.6_nonclinical_summaries/2.6.5_pk_tabulated.pdf,present
+2.6.6,Toxicology Written Summary,"Toxicology written summary present. However, the reproductive toxicology section is sparse — only embryo-fetal development data for the rat are included; rabbit studies and pre/post-natal data are cited as 'ongoing'. The carcinogenicity sub-section references only the 6-month transgenic mouse study; the 2-year rat study results are listed as 'preliminary'.",M2/2.6_nonclinical_summaries/2.6.6_toxicology_written.pdf,needs_review
+2.6.7,Toxicology Tabulated Summary,,M2/2.6_nonclinical_summaries/2.6.7_toxicology_tabulated.pdf,present
+2.7,Clinical Summary,,M2/2.7_clinical_summary/,present
+2.7.1,Summary of Biopharmaceutic Studies and Associated Analytical Methods,,M2/2.7_clinical_summary/2.7.1_biopharmaceutics.pdf,present
+2.7.2,Summary of Clinical Pharmacology Studies,,M2/2.7_clinical_summary/2.7.2_clinical_pharmacology.pdf,present
+2.7.3,Summary of Clinical Efficacy,,M2/2.7_clinical_summary/2.7.3_clinical_efficacy.pdf,present
+2.7.4,Summary of Clinical Safety,"MISSING — The integrated summary of clinical safety has not been submitted. This is arguably the most critical safety section in Module 2 for pharmacovigilance purposes. Adverse event tables, serious adverse events, deaths, and discontinuation data must be presented here. Absence is a critical deficiency for any NDA.",,missing
+2.7.5,References,,M2/2.7_clinical_summary/2.7.5_references.pdf,present
+2.7.6,Synopses of Individual Studies,"Synopses for SYN-101, SYN-201, SYN-301 included. SYN-401 (ongoing extension) synopsis marked as interim.",M2/2.7_clinical_summary/2.7.6_study_synopses.pdf,present
+3.1,Table of Contents of Module 3,,M3/3.1_module3_toc.pdf,present
+3.2,Body of Data,,M3/3.2_body_of_data/,present
+3.2.S,Drug Substance,,M3/3.2_body_of_data/S/,present
+3.2.S.1,General Information,,M3/3.2_body_of_data/S/S.1_general_info.pdf,present
+3.2.S.2,Manufacture,,M3/3.2_body_of_data/S/S.2_manufacture.pdf,present
+3.2.S.3,Characterisation,,M3/3.2_body_of_data/S/S.3_characterisation.pdf,present
+3.2.S.4,Control of Drug Substance,,M3/3.2_body_of_data/S/S.4_control.pdf,present
+3.2.S.5,Reference Standards or Materials,,M3/3.2_body_of_data/S/S.5_reference_standards.pdf,present
+3.2.S.6,Container Closure System,,M3/3.2_body_of_data/S/S.6_container_closure.pdf,present
+3.2.S.7,Stability,,M3/3.2_body_of_data/S/S.7_stability.pdf,present
+3.2.P,Drug Product,,M3/3.2_body_of_data/P/,present
+3.2.P.1,Description and Composition of the Drug Product,,M3/3.2_body_of_data/P/P.1_description_composition.pdf,present
+3.2.P.2,Pharmaceutical Development,,M3/3.2_body_of_data/P/P.2_pharma_development.pdf,present
+3.2.P.3,Manufacture,,M3/3.2_body_of_data/P/P.3_manufacture.pdf,present
+3.2.P.4,Control of Excipients,,M3/3.2_body_of_data/P/P.4_excipient_control.pdf,present
+3.2.P.5,Control of Drug Product,,M3/3.2_body_of_data/P/P.5_drug_product_control.pdf,present
+3.2.P.6,Reference Standards or Materials,,M3/3.2_body_of_data/P/P.6_reference_standards.pdf,present
+3.2.P.7,Container Closure System,,M3/3.2_body_of_data/P/P.7_container_closure.pdf,present
+3.2.P.8,Stability,,M3/3.2_body_of_data/P/P.8_stability.pdf,present
+3.2.A,Appendices,Adventitious agents safety evaluation included (biological excipient of animal origin used in manufacturing).,M3/3.2_body_of_data/A/,present
+3.2.R,Regional Information,FDA-specific: executed batch records and method validation packages.,M3/3.2_body_of_data/R/,present
+3.3,Literature References,,M3/3.3_literature_references.pdf,present
+4.1,Table of Contents of Module 4,,M4/4.1_module4_toc.pdf,present
+4.2,Study Reports,,M4/4.2_study_reports/,present
+4.2.1,Pharmacology,"Primary PD, secondary PD, and safety pharmacology studies completed. hERG channel assay included.",M4/4.2_study_reports/4.2.1_pharmacology/,present
+4.2.2,Pharmacokinetics,"Full ADME package in rat, dog, and human in vitro. CYP3A4 inhibition studies included.",M4/4.2_study_reports/4.2.2_pharmacokinetics/,present
+4.2.3,Toxicology,,M4/4.2_study_reports/4.2.3_toxicology/,present
+4.2.3.1,Single-Dose Toxicity,Rat and dog oral and IV single-dose studies. MTD established.,M4/4.2_study_reports/4.2.3_toxicology/4.2.3.1_single_dose.pdf,present
+4.2.3.2,Repeat-Dose Toxicity,"28-day and 90-day rat and dog repeat-dose studies completed. A 6-month rat study is present but the 9-month dog chronic study report is marked 'DRAFT — FINAL REPORT PENDING'. For a drug intended for chronic use, a complete 9-month dog package is expected. Hepatotoxicity findings at high dose (3× therapeutic) in the 90-day rat study are not discussed in Section 2.6.6.",M4/4.2_study_reports/4.2.3_toxicology/4.2.3.2_repeat_dose/,needs_review
+4.2.3.3,Genotoxicity,"Ames test (negative), chromosomal aberration in vitro (negative), in vivo micronucleus (negative). Full standard battery complete.",M4/4.2_study_reports/4.2.3_toxicology/4.2.3.3_genotoxicity.pdf,present
+4.2.3.4,Carcinogenicity,"Carcinogenicity section submitted (declared applicable — chronic-use drug). 6-month rasH2 transgenic mouse study complete. 2-year rat carcinogenicity study: only interim 12-month data submitted; final study report expected Q4 2024 per applicant's cover letter. Section is conditional-applicable and conditionally present, but final data required.",M4/4.2_study_reports/4.2.3_toxicology/4.2.3.4_carcinogenicity/,needs_review
+4.2.3.5,Reproductive and Developmental Toxicity,"MISSING — No completed reproductive toxicology study reports submitted. The rabbit embryo-fetal study (EFD) is listed as 'ongoing' in the applicant's cover letter. For a chronic-use drug in a population that may include women of childbearing potential, a complete reproductive package (fertility, EFD rat + rabbit, PPND) is required. This is a critical gap.",,missing
+4.2.3.6,Local Tolerance,"Not applicable. Oral tablet formulation. No parenteral, topical, or other non-oral route of administration.",,not_applicable
+4.2.3.7,Other Toxicity Studies,Immunotoxicity study included. Antigenicity assessment not applicable (small molecule). No dependence potential studies — applicant claims not applicable.,M4/4.2_study_reports/4.2.3_toxicology/4.2.3.7_other_tox.pdf,present
+4.3,Literature References,,M4/4.3_literature_references.pdf,present
+5.1,Table of Contents of Module 5,,M5/5.1_module5_toc.pdf,present
+5.2,Tabular Listing of All Clinical Studies,"Lists 4 studies: SYN-101 (Phase 1, 48 subjects), SYN-201 (Phase 2, 240 subjects), SYN-301 (Phase 3, 1,820 subjects), SYN-401 (ongoing long-term extension, 540 subjects enrolled).",M5/5.2_clinical_study_listing.pdf,present
+5.3,Clinical Study Reports,,M5/5.3_clinical_study_reports/,present
+5.3.1,Reports of Biopharmaceutic Studies,"BA study, food-effect study, and comparative dissolution with reference product.",M5/5.3_clinical_study_reports/5.3.1_biopharmaceutic/,present
+5.3.2,Reports of Studies Pertinent to Pharmacokinetics Using Human Biomaterials,"CYP3A4 inhibition/induction, plasma protein binding, hepatocyte metabolism studies.",M5/5.3_clinical_study_reports/5.3.2_pk_biomaterials/,present
+5.3.3,Reports of Human Pharmacokinetic Studies,"Phase 1 SYN-101 report. PK in healthy volunteers, hepatic/renal impairment, drug interaction with CYP3A4 inhibitor.",M5/5.3_clinical_study_reports/5.3.3_human_pk/,present
+5.3.4,Reports of Human Pharmacodynamic Studies,LDL-C reduction PD studies from Phase 2 sub-study.,M5/5.3_clinical_study_reports/5.3.4_human_pd/,present
+5.3.5,Reports of Efficacy and Safety Studies,"Phase 2 (SYN-201) and Phase 3 (SYN-301) study reports submitted. SYN-301 is the pivotal Phase 3 trial (1,820 patients, 52 weeks). However, the SYN-301 Clinical Study Report is marked 'FINAL v0.9 — PENDING QC SIGN-OFF'. Safety section of SYN-301 CSR lists 12 hepatic adverse events (ALT >3× ULN) that are not reconciled with the PRR signal detected in FAERS. SYN-401 long-term extension data not yet submitted.",M5/5.3_clinical_study_reports/5.3.5_efficacy_safety/,needs_review
+5.3.6,Reports of Post-Marketing Experience,Drug is approved in one non-ICH jurisdiction (fictional). Post-marketing safety report submitted but contains only 3 months of spontaneous report data (Jan–Mar 2024). Does not include PSUR or PBRER. Document references a 'full PSUR to follow' but no timeline is given. FAERS hepatotoxicity signal not discussed.,M5/5.3_clinical_study_reports/5.3.6_post_marketing.pdf,needs_review
+5.3.7,Case Report Forms and Individual Patient Listings,"CRFs and individual patient listings for all SAEs from SYN-101, SYN-201, SYN-301 included per ICH E3 requirements.",M5/5.3_clinical_study_reports/5.3.7_crfs_listings/,present
+5.4,Literature References,Published literature supporting the clinical data package. Includes key statin class-effect literature.,M5/5.4_literature_references.pdf,present

@@ -1,5 +1,21 @@
-fastmcp>=0.4.0
-httpx>=0.27.0
-python-dotenv>=1.0.0
-pydantic>=2.6.0
-pydantic-settings>=2.2.0
+# PharmaGuard AI MCP Server — Python dependencies
+#
+# Install with:
+#   pip install -r src/mcp-server/requirements.txt
+#
+# These are separate from the backend requirements (src/backend/requirements.txt).
+# The MCP server does NOT import any backend code directly; it calls the backend
+# over HTTP via httpx.  You do NOT need to install backend dependencies here.
+
+# MCP framework — FastMCP wraps the MCP protocol as decorated Python functions
+fastmcp>=2.0.0,<3.0.0
+
+# HTTP client for calling the PharmaGuard FastAPI backend
+httpx>=0.27.0,<1.0.0
+
+# Environment variable loading from .env files
+python-dotenv>=1.0.0,<2.0.0
+
+# Pydantic for config validation (pydantic-settings reads from env)
+pydantic>=2.6.0,<3.0.0
+pydantic-settings>=2.2.0,<3.0.0
