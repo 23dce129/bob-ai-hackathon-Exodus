@@ -46,6 +46,21 @@ export async function checkSampleReadiness(): Promise<ReadinessResponse> {
   return data
 }
 
+export async function checkDossierFile(
+  file: File,
+  drug_name?: string
+): Promise<ReadinessResponse> {
+  const formData = new FormData()
+  formData.append('file', file)
+  if (drug_name) {
+    formData.append('drug_name', drug_name)
+  }
+  const { data } = await api.post<ReadinessResponse>('/dossier/check', formData, {
+    headers: { 'Content-Type': 'multipart/form-data' },
+  })
+  return data
+}
+
 export async function checkDossierText(
   drug_name: string,
   outline_text: string

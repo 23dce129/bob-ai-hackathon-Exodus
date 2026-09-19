@@ -1,0 +1,1644 @@
+{
+  "schema_version": "1.0.0",
+  "disclaimer": "ICH M4 CTD Knowledge Base \u2014 Demonstration and heuristic screening tool only. NOT legal or regulatory advice and does NOT represent the position of ICH, FDA, or EMA.",
+  "modules": [
+    {
+      "id": "M1",
+      "number": 1,
+      "title": "Administrative Information and Prescribing Information",
+      "scope": "regional",
+      "ich_source": false,
+      "sections": [
+        {
+          "id": "1.1",
+          "number": "1.1",
+          "title": "Comprehensive Table of Contents",
+          "parent_id": "M1",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Index and table of contents.",
+          "ich_source": false,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "1.2",
+          "number": "1.2",
+          "title": "Application Form",
+          "parent_id": "M1",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Administrative application form (e.g. FDA Form 356h).",
+          "ich_source": false,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "1.3",
+          "number": "1.3",
+          "title": "Product Information",
+          "parent_id": "M1",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Labeling, package insert, and prescribing information.",
+          "ich_source": false,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "general",
+              "hepatotoxicity",
+              "cardiac",
+              "bleeding",
+              "anaphylaxis"
+            ]
+          }
+        },
+        {
+          "id": "1.4",
+          "number": "1.4",
+          "title": "Information about the Experts",
+          "parent_id": "M1",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Expert statements and CVs.",
+          "ich_source": false,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "1.5",
+          "number": "1.5",
+          "title": "Specific Requirements for Different Types of Applications",
+          "parent_id": "M1",
+          "level": 2,
+          "requirement": "conditional",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Patent certifications and exclusivity claims.",
+          "ich_source": false,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "1.6",
+          "number": "1.6",
+          "title": "Environmental Risk Assessment",
+          "parent_id": "M1",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Environmental assessment or categorical exclusion.",
+          "ich_source": false,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "1.7",
+          "number": "1.7",
+          "title": "Clinical Microbiology",
+          "parent_id": "M1",
+          "level": 2,
+          "requirement": "conditional",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Applicable for antimicrobial or anti-infective products.",
+          "ich_source": false,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": [
+              "infection"
+            ]
+          }
+        },
+        {
+          "id": "1.8",
+          "number": "1.8",
+          "title": "Pharmacovigilance",
+          "parent_id": "M1",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Risk management plans (RMP) and pharmacovigilance systems.",
+          "ich_source": false,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "cardiac",
+              "bleeding",
+              "renal",
+              "neurological",
+              "carcinogenicity",
+              "reproductive",
+              "anaphylaxis",
+              "infection",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "1.9",
+          "number": "1.9",
+          "title": "Case Report Forms and Individual Patient Listings",
+          "parent_id": "M1",
+          "level": 2,
+          "requirement": "optional",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Patient listings when required regionally.",
+          "ich_source": false,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "M2",
+      "number": 2,
+      "title": "Common Technical Document Summaries",
+      "scope": "common",
+      "ich_source": true,
+      "sections": [
+        {
+          "id": "2.1",
+          "number": "2.1",
+          "title": "Table of Contents of Module 2",
+          "parent_id": "M2",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "CTD summaries table of contents.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "2.2",
+          "number": "2.2",
+          "title": "Introduction",
+          "parent_id": "M2",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Introduction to pharmacological class and clinical context.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "2.3",
+          "number": "2.3",
+          "title": "Quality Overall Summary",
+          "parent_id": "M2",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Overview of CMC / Quality aspects.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "2.4",
+          "number": "2.4",
+          "title": "Nonclinical Overview",
+          "parent_id": "M2",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Integrated nonclinical assessment.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "general",
+              "hepatotoxicity",
+              "cardiac",
+              "carcinogenicity",
+              "renal",
+              "reproductive"
+            ]
+          }
+        },
+        {
+          "id": "2.5",
+          "number": "2.5",
+          "title": "Clinical Overview",
+          "parent_id": "M2",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Critical analysis of clinical efficacy, safety, and benefit-risk.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "cardiac",
+              "bleeding",
+              "renal",
+              "neurological",
+              "carcinogenicity",
+              "reproductive",
+              "anaphylaxis",
+              "infection",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "2.6",
+          "number": "2.6",
+          "title": "Nonclinical Written and Tabulated Summaries",
+          "parent_id": "M2",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Summaries of nonclinical testing.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "2.6.1",
+          "number": "2.6.1",
+          "title": "Introduction",
+          "parent_id": "2.6",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Introduction to nonclinical summaries.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "2.6.2",
+          "number": "2.6.2",
+          "title": "Pharmacology Written Summary",
+          "parent_id": "2.6",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Primary, secondary, safety pharmacology.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "cardiac",
+              "neurological",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "2.6.3",
+          "number": "2.6.3",
+          "title": "Pharmacology Tabulated Summary",
+          "parent_id": "2.6",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Tabulated pharmacology study data.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "2.6.4",
+          "number": "2.6.4",
+          "title": "Pharmacokinetics Written Summary",
+          "parent_id": "2.6",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "ADME written summary.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "renal",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "2.6.5",
+          "number": "2.6.5",
+          "title": "Pharmacokinetics Tabulated Summary",
+          "parent_id": "2.6",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "ADME tabulated data.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "2.6.6",
+          "number": "2.6.6",
+          "title": "Toxicology Written Summary",
+          "parent_id": "2.6",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Detailed written summary of toxicology studies.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "renal",
+              "carcinogenicity",
+              "reproductive",
+              "cardiac",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "2.6.7",
+          "number": "2.6.7",
+          "title": "Toxicology Tabulated Summary",
+          "parent_id": "2.6",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Tabulated toxicology study data.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "renal",
+              "carcinogenicity",
+              "reproductive",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "2.7",
+          "number": "2.7",
+          "title": "Clinical Summary",
+          "parent_id": "M2",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Summary of clinical information.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "2.7.1",
+          "number": "2.7.1",
+          "title": "Summary of Biopharmaceutic Studies and Associated Analytical Methods",
+          "parent_id": "2.7",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Bioavailability, bioequivalence, and analytical methods summary.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "2.7.2",
+          "number": "2.7.2",
+          "title": "Summary of Clinical Pharmacology Studies",
+          "parent_id": "2.7",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Human PK, PD, and DDI summary.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "renal",
+              "cardiac"
+            ]
+          }
+        },
+        {
+          "id": "2.7.3",
+          "number": "2.7.3",
+          "title": "Summary of Clinical Efficacy",
+          "parent_id": "2.7",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Dose-response, efficacy trials summary across indications.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "2.7.4",
+          "number": "2.7.4",
+          "title": "Summary of Clinical Safety",
+          "parent_id": "2.7",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Integrated analysis of clinical safety, adverse events, deaths, and lab changes.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "cardiac",
+              "bleeding",
+              "renal",
+              "neurological",
+              "carcinogenicity",
+              "reproductive",
+              "anaphylaxis",
+              "infection",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "2.7.5",
+          "number": "2.7.5",
+          "title": "References",
+          "parent_id": "2.7",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "References for Module 2 clinical summaries.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "2.7.6",
+          "number": "2.7.6",
+          "title": "Synopses of Individual Studies",
+          "parent_id": "2.7",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "ICH E3 structured synopses for all clinical studies.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "M3",
+      "number": 3,
+      "title": "Quality",
+      "scope": "common",
+      "ich_source": true,
+      "sections": [
+        {
+          "id": "3.1",
+          "number": "3.1",
+          "title": "Table of Contents of Module 3",
+          "parent_id": "M3",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Module 3 TOC.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2",
+          "number": "3.2",
+          "title": "Body of Data",
+          "parent_id": "M3",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "CMC body of data.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.S",
+          "number": "3.2.S",
+          "title": "Drug Substance",
+          "parent_id": "3.2",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Drug substance quality data.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.S.1",
+          "number": "3.2.S.1",
+          "title": "General Information",
+          "parent_id": "3.2.S",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Nomenclature, structure, general properties.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.S.2",
+          "number": "3.2.S.2",
+          "title": "Manufacture",
+          "parent_id": "3.2.S",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Manufacturer, process, controls.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.S.3",
+          "number": "3.2.S.3",
+          "title": "Characterisation",
+          "parent_id": "3.2.S",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Elucidation of structure and impurities.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.S.4",
+          "number": "3.2.S.4",
+          "title": "Control of Drug Substance",
+          "parent_id": "3.2.S",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Specification, analytical procedures, validation.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.S.5",
+          "number": "3.2.S.5",
+          "title": "Reference Standards or Materials",
+          "parent_id": "3.2.S",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Reference standards characterization.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.S.6",
+          "number": "3.2.S.6",
+          "title": "Container Closure System",
+          "parent_id": "3.2.S",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Container closure description.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.S.7",
+          "number": "3.2.S.7",
+          "title": "Stability",
+          "parent_id": "3.2.S",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Stability summary, protocol, and data.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.P",
+          "number": "3.2.P",
+          "title": "Drug Product",
+          "parent_id": "3.2",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Drug product quality data.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.P.1",
+          "number": "3.2.P.1",
+          "title": "Description and Composition of the Drug Product",
+          "parent_id": "3.2.P",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Formulation description and composition.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.P.2",
+          "number": "3.2.P.2",
+          "title": "Pharmaceutical Development",
+          "parent_id": "3.2.P",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Formulation and process development studies.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.P.3",
+          "number": "3.2.P.3",
+          "title": "Manufacture",
+          "parent_id": "3.2.P",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Batch formula, manufacturing process, and controls.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.P.4",
+          "number": "3.2.P.4",
+          "title": "Control of Excipients",
+          "parent_id": "3.2.P",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Excipient specifications and validation.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.P.5",
+          "number": "3.2.P.5",
+          "title": "Control of Drug Product",
+          "parent_id": "3.2.P",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Drug product specifications, methods, validation.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.P.6",
+          "number": "3.2.P.6",
+          "title": "Reference Standards or Materials",
+          "parent_id": "3.2.P",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Reference standards for drug product.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.P.7",
+          "number": "3.2.P.7",
+          "title": "Container Closure System",
+          "parent_id": "3.2.P",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Primary and secondary packaging specifications.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.P.8",
+          "number": "3.2.P.8",
+          "title": "Stability",
+          "parent_id": "3.2.P",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Finished product stability data.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.A",
+          "number": "3.2.A",
+          "title": "Appendices",
+          "parent_id": "3.2",
+          "level": 3,
+          "requirement": "conditional",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Facilities, adventitious agents, or novel excipients.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.2.R",
+          "number": "3.2.R",
+          "title": "Regional Information",
+          "parent_id": "3.2",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Region-specific CMC requirements.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "3.3",
+          "number": "3.3",
+          "title": "Literature References",
+          "parent_id": "M3",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA",
+            "ANDA"
+          ],
+          "submission_types_note": "Literature references cited in Module 3.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "M4",
+      "number": 4,
+      "title": "Nonclinical Study Reports",
+      "scope": "common",
+      "ich_source": true,
+      "sections": [
+        {
+          "id": "4.1",
+          "number": "4.1",
+          "title": "Table of Contents of Module 4",
+          "parent_id": "M4",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Nonclinical study reports TOC.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "4.2",
+          "number": "4.2",
+          "title": "Study Reports",
+          "parent_id": "M4",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Full nonclinical study reports.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "4.2.1",
+          "number": "4.2.1",
+          "title": "Pharmacology",
+          "parent_id": "4.2",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Primary, secondary, and safety pharmacology study reports.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "cardiac",
+              "neurological",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "4.2.2",
+          "number": "4.2.2",
+          "title": "Pharmacokinetics",
+          "parent_id": "4.2",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Nonclinical ADME and bioanalytical study reports.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "renal",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "4.2.3",
+          "number": "4.2.3",
+          "title": "Toxicology",
+          "parent_id": "4.2",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Full toxicology study reports battery.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": [
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "4.2.3.1",
+          "number": "4.2.3.1",
+          "title": "Single-Dose Toxicity",
+          "parent_id": "4.2.3",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Acute single-dose studies in two mammalian species.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "4.2.3.2",
+          "number": "4.2.3.2",
+          "title": "Repeat-Dose Toxicity",
+          "parent_id": "4.2.3",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Sub-chronic and chronic repeat-dose toxicology reports.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "cardiac",
+              "renal",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "4.2.3.3",
+          "number": "4.2.3.3",
+          "title": "Genotoxicity",
+          "parent_id": "4.2.3",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "In vitro and in vivo genotoxicity standard battery.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "carcinogenicity",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "4.2.3.4",
+          "number": "4.2.3.4",
+          "title": "Carcinogenicity",
+          "parent_id": "4.2.3",
+          "level": 4,
+          "requirement": "conditional",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Required for pharmaceuticals given continuously for >= 6 months.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "carcinogenicity"
+            ]
+          }
+        },
+        {
+          "id": "4.2.3.5",
+          "number": "4.2.3.5",
+          "title": "Reproductive and Developmental Toxicity",
+          "parent_id": "4.2.3",
+          "level": 4,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Fertility, embryo-fetal development, pre/post-natal studies.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "reproductive"
+            ]
+          }
+        },
+        {
+          "id": "4.2.3.6",
+          "number": "4.2.3.6",
+          "title": "Local Tolerance",
+          "parent_id": "4.2.3",
+          "level": 4,
+          "requirement": "conditional",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Required for non-oral or topical formulations.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": [
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "4.2.3.7",
+          "number": "4.2.3.7",
+          "title": "Other Toxicity Studies",
+          "parent_id": "4.2.3",
+          "level": 4,
+          "requirement": "conditional",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Immunotoxicity, antigenicity, dependence potential, metabolites.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "anaphylaxis",
+              "infection",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "4.3",
+          "number": "4.3",
+          "title": "Literature References",
+          "parent_id": "M4",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Literature references cited in Module 4.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "M5",
+      "number": 5,
+      "title": "Clinical Study Reports",
+      "scope": "common",
+      "ich_source": true,
+      "sections": [
+        {
+          "id": "5.1",
+          "number": "5.1",
+          "title": "Table of Contents of Module 5",
+          "parent_id": "M5",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Clinical study reports TOC.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "5.2",
+          "number": "5.2",
+          "title": "Tabular Listing of All Clinical Studies",
+          "parent_id": "M5",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Summary table of all Phase 1-4 clinical trials.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "5.3",
+          "number": "5.3",
+          "title": "Clinical Study Reports",
+          "parent_id": "M5",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Full clinical study reports.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": [
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "5.3.1",
+          "number": "5.3.1",
+          "title": "Reports of Biopharmaceutic Studies",
+          "parent_id": "5.3",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "BA/BE, food effect, and in vitro-in vivo correlation study reports.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "5.3.2",
+          "number": "5.3.2",
+          "title": "Reports of Studies Pertinent to Pharmacokinetics Using Human Biomaterials",
+          "parent_id": "5.3",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Human biomaterial plasma protein binding, CYP metabolism.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "renal"
+            ]
+          }
+        },
+        {
+          "id": "5.3.3",
+          "number": "5.3.3",
+          "title": "Reports of Human Pharmacokinetic Studies",
+          "parent_id": "5.3",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "PK in healthy volunteers, patient populations, intrinsic/extrinsic factors.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "renal",
+              "cardiac"
+            ]
+          }
+        },
+        {
+          "id": "5.3.4",
+          "number": "5.3.4",
+          "title": "Reports of Human Pharmacodynamic Studies",
+          "parent_id": "5.3",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Human pharmacodynamic and PK/PD studies.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": [
+              "cardiac",
+              "neurological"
+            ]
+          }
+        },
+        {
+          "id": "5.3.5",
+          "number": "5.3.5",
+          "title": "Reports of Efficacy and Safety Studies",
+          "parent_id": "5.3",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Pivotal Phase 2/3 controlled clinical trial CSRs per ICH E3.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "cardiac",
+              "bleeding",
+              "renal",
+              "neurological",
+              "carcinogenicity",
+              "reproductive",
+              "anaphylaxis",
+              "infection",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "5.3.6",
+          "number": "5.3.6",
+          "title": "Reports of Post-Marketing Experience",
+          "parent_id": "5.3",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Post-marketing safety, PSUR/PBRER, epidemiological studies.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": true,
+            "traceability_categories": [
+              "hepatotoxicity",
+              "cardiac",
+              "bleeding",
+              "renal",
+              "neurological",
+              "carcinogenicity",
+              "reproductive",
+              "anaphylaxis",
+              "infection",
+              "general"
+            ]
+          }
+        },
+        {
+          "id": "5.3.7",
+          "number": "5.3.7",
+          "title": "Case Report Forms and Individual Patient Listings",
+          "parent_id": "5.3",
+          "level": 3,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "CRFs and listings for deaths, SAEs, and discontinuations.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        },
+        {
+          "id": "5.4",
+          "number": "5.4",
+          "title": "Literature References",
+          "parent_id": "M5",
+          "level": 2,
+          "requirement": "required",
+          "applicability": [
+            "NDA",
+            "BLA",
+            "MAA"
+          ],
+          "submission_types_note": "Literature references cited in Module 5.",
+          "ich_source": true,
+          "pharmaguard_annotations": {
+            "safety_relevant": false,
+            "traceability_categories": []
+          }
+        }
+      ]
+    }
+  ]
+}

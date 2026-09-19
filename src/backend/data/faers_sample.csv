@@ -1,0 +1,286 @@
+primaryid,drug_name,pt,outc_cod,event_dt,age,sex
+1000001,Warfarin Sodium,Bleeding,HO,20220115,55.0,M
+1000002,Warfarin Sodium,Bleeding,DE,20220220,56.0,F
+1000003,Warfarin Sodium,Bleeding,OT,20220310,57.0,M
+1000004,Warfarin Sodium,Bleeding,HO,20220412,58.0,M
+1000005,Warfarin Sodium,Bleeding,DE,20220518,59.0,F
+1000006,Warfarin Sodium,Bleeding,OT,20220625,60.0,M
+1000007,Warfarin Sodium,Bleeding,HO,20220714,61.0,M
+1000008,Warfarin Sodium,Bleeding,DE,20220830,62.0,F
+1000009,Warfarin Sodium,Bleeding,OT,20220922,63.0,M
+1000010,Warfarin Sodium,Bleeding,HO,20221005,64.0,M
+1000011,Warfarin Sodium,Bleeding,DE,20221115,65.0,F
+1000012,Warfarin Sodium,Bleeding,OT,20221201,66.0,M
+1000013,Warfarin Sodium,Bleeding,HO,20230110,67.0,M
+1000014,Warfarin Sodium,Bleeding,DE,20230214,68.0,F
+1000015,Warfarin Sodium,Bleeding,OT,20230320,69.0,M
+1000016,Warfarin Sodium,Bleeding,HO,20230418,70.0,M
+1000017,Warfarin Sodium,Bleeding,DE,20230522,71.0,F
+1000018,Warfarin Sodium,Bleeding,OT,20230630,72.0,M
+1000019,Warfarin Sodium,Bleeding,HO,20230715,73.0,M
+1000020,Warfarin Sodium,Bleeding,DE,20230825,74.0,F
+1000021,Warfarin Sodium,Bleeding,OT,20230919,75.0,M
+1000022,Warfarin Sodium,Bleeding,HO,20231012,76.0,M
+1000023,Warfarin Sodium,Bleeding,DE,20231120,77.0,F
+1000024,Warfarin Sodium,Bleeding,OT,20231205,78.0,M
+1000025,Warfarin Sodium,Bleeding,HO,20240115,79.0,M
+1000026,Warfarin Sodium,Bleeding,DE,20240220,80.0,F
+1000027,Warfarin Sodium,Bleeding,OT,20240310,55.0,M
+1000028,Warfarin Sodium,Bleeding,HO,20220115,56.0,M
+1000029,amoxicillin,anaphylaxis,HO,20220115,20.0,F
+1000030,amoxicillin,anaphylaxis,LT,20220220,21.0,M
+1000031,synvastatin,drug-induced liver injury,HO,20220115,45.0,M
+1000032,synvastatin,drug-induced liver injury,OT,20220220,46.0,F
+1000033,synvastatin,drug-induced liver injury,HO,20220310,47.0,M
+1000034,synvastatin,drug-induced liver injury,OT,20220412,48.0,F
+1000035,synvastatin,drug-induced liver injury,HO,20220518,49.0,M
+1000036,synvastatin,drug-induced liver injury,OT,20220625,50.0,F
+1000037,synvastatin,drug-induced liver injury,HO,20220714,51.0,M
+1000038,synvastatin,drug-induced liver injury,OT,20220830,52.0,F
+1000039,synvastatin,drug-induced liver injury,HO,20220922,53.0,M
+1000040,synvastatin,drug-induced liver injury,OT,20221005,54.0,F
+1000041,synvastatin,drug-induced liver injury,HO,20221115,55.0,M
+1000042,synvastatin,drug-induced liver injury,OT,20221201,56.0,F
+1000043,synvastatin,drug-induced liver injury,HO,20230110,57.0,M
+1000044,synvastatin,drug-induced liver injury,OT,20230214,58.0,F
+1000045,synvastatin,drug-induced liver injury,HO,20230320,59.0,M
+1000046,synvastatin,drug-induced liver injury,OT,20230418,60.0,F
+1000047,synvastatin,drug-induced liver injury,HO,20230522,61.0,M
+1000048,synvastatin,drug-induced liver injury,OT,20230630,62.0,F
+1000049,synvastatin,myalgia,OT,20220115,40.0,F
+1000050,synvastatin,myalgia,OT,20220220,41.0,M
+1000051,synvastatin,myalgia,OT,20220310,42.0,F
+1000052,synvastatin,myalgia,OT,20220412,43.0,M
+1000053,synvastatin,myalgia,OT,20220518,44.0,F
+1000054,synvastatin,myalgia,OT,20220625,45.0,M
+1000055,synvastatin,myalgia,OT,20220714,46.0,F
+1000056,synvastatin,myalgia,OT,20220830,47.0,M
+1000057,synvastatin,myalgia,OT,20220922,48.0,F
+1000058,synvastatin,myalgia,OT,20221005,49.0,M
+1000059,synvastatin,myalgia,OT,20221115,50.0,F
+1000060,synvastatin,myalgia,OT,20221201,51.0,M
+1000061,synvastatin,myalgia,OT,20230110,52.0,F
+1000062,synvastatin,myalgia,OT,20230214,53.0,M
+1000063,synvastatin,myalgia,OT,20230320,54.0,F
+1000064,METFORMIN HCL,lactic acidosis,HO,20220115,50.0,M
+1000065,METFORMIN HCL,lactic acidosis,DE,20220220,51.0,F
+1000066,METFORMIN HCL,lactic acidosis,HO,20220310,52.0,M
+1000067,METFORMIN HCL,lactic acidosis,DE,20220412,53.0,F
+1000068,METFORMIN HCL,lactic acidosis,HO,20220518,54.0,M
+1000069,METFORMIN HCL,lactic acidosis,DE,20220625,55.0,F
+1000070,METFORMIN HCL,lactic acidosis,HO,20220714,56.0,M
+1000071,METFORMIN HCL,lactic acidosis,DE,20220830,57.0,F
+1000072,METFORMIN HCL,lactic acidosis,HO,20220922,58.0,M
+1000073,METFORMIN HCL,lactic acidosis,DE,20221005,59.0,F
+1000074,METFORMIN HCL,lactic acidosis,HO,20221115,60.0,M
+1000075,METFORMIN HCL,lactic acidosis,DE,20221201,61.0,F
+1000076,METFORMIN HCL,lactic acidosis,HO,20230110,62.0,M
+1000077,METFORMIN HCL,lactic acidosis,DE,20230214,63.0,F
+1000078,metformin,nausea,OT,20220115,35.0,F
+1000079,metformin,nausea,OT,20220220,36.0,F
+1000080,metformin,nausea,OT,20220310,37.0,M
+1000081,metformin,nausea,OT,20220412,38.0,F
+1000082,metformin,nausea,OT,20220518,39.0,F
+1000083,metformin,nausea,OT,20220625,40.0,M
+1000084,metformin,nausea,OT,20220714,41.0,F
+1000085,metformin,nausea,OT,20220830,42.0,F
+1000086,metformin,nausea,OT,20220922,43.0,M
+1000087,metformin,nausea,OT,20221005,44.0,F
+1000088,metformin,nausea,OT,20221115,45.0,F
+1000089,metformin,nausea,OT,20221201,46.0,M
+1000090,metformin,nausea,OT,20230110,47.0,F
+1000091,metformin,nausea,OT,20230214,48.0,F
+1000092,metformin,nausea,OT,20230320,49.0,M
+1000093,metformin,nausea,OT,20230418,50.0,F
+1000094,lisinopril,angioedema,HO,20220115,50.0,M
+1000095,lisinopril,angioedema,LT,20220220,51.0,F
+1000096,lisinopril,angioedema,HO,20220310,52.0,M
+1000097,lisinopril,angioedema,LT,20220412,53.0,F
+1000098,lisinopril,angioedema,HO,20220518,54.0,M
+1000099,lisinopril,angioedema,LT,20220625,55.0,F
+1000100,lisinopril,angioedema,HO,20220714,56.0,M
+1000101,lisinopril,angioedema,LT,20220830,57.0,F
+1000102,lisinopril,angioedema,HO,20220922,58.0,M
+1000103,lisinopril,angioedema,LT,20221005,59.0,F
+1000104,lisinopril,angioedema,HO,20221115,60.0,M
+1000105,lisinopril,angioedema,LT,20221201,61.0,F
+1000106,lisinopril,angioedema,HO,20230110,62.0,M
+1000107,lisinopril,angioedema,LT,20230214,63.0,F
+1000108,lisinopril,angioedema,HO,20230320,64.0,M
+1000109,lisinopril,cough,OT,20220115,45.0,M
+1000110,lisinopril,cough,OT,20220220,46.0,F
+1000111,lisinopril,cough,OT,20220310,47.0,M
+1000112,lisinopril,cough,OT,20220412,48.0,F
+1000113,lisinopril,cough,OT,20220518,49.0,M
+1000114,lisinopril,cough,OT,20220625,50.0,F
+1000115,lisinopril,cough,OT,20220714,51.0,M
+1000116,lisinopril,cough,OT,20220830,52.0,F
+1000117,lisinopril,cough,OT,20220922,53.0,M
+1000118,lisinopril,cough,OT,20221005,54.0,F
+1000119,lisinopril,cough,OT,20221115,55.0,M
+1000120,lisinopril,cough,OT,20221201,56.0,F
+1000121,lisinopril,cough,OT,20230110,57.0,M
+1000122,lisinopril,cough,OT,20230214,58.0,F
+1000123,lisinopril,cough,OT,20230320,59.0,M
+1000124,lisinopril,cough,OT,20230418,60.0,F
+1000125,lisinopril,cough,OT,20230522,61.0,M
+1000126,lisinopril,cough,OT,20230630,62.0,F
+1000127,lisinopril,cough,OT,20230715,63.0,M
+1000128,lisinopril,cough,OT,20230825,64.0,F
+1000129,atorvastatin calcium,rhabdomyolysis,HO,20220115,50.0,M
+1000130,atorvastatin calcium,rhabdomyolysis,HO,20220220,51.0,M
+1000131,atorvastatin calcium,rhabdomyolysis,HO,20220310,52.0,F
+1000132,atorvastatin calcium,rhabdomyolysis,HO,20220412,53.0,M
+1000133,atorvastatin calcium,rhabdomyolysis,HO,20220518,54.0,M
+1000134,atorvastatin calcium,rhabdomyolysis,HO,20220625,55.0,F
+1000135,atorvastatin calcium,rhabdomyolysis,HO,20220714,56.0,M
+1000136,atorvastatin calcium,rhabdomyolysis,HO,20220830,57.0,M
+1000137,atorvastatin calcium,rhabdomyolysis,HO,20220922,58.0,F
+1000138,atorvastatin calcium,rhabdomyolysis,HO,20221005,59.0,M
+1000139,atorvastatin calcium,rhabdomyolysis,HO,20221115,60.0,M
+1000140,atorvastatin calcium,rhabdomyolysis,HO,20221201,61.0,F
+1000141,atorvastatin,hepatic enzymes increased,OT,20220115,45.0,F
+1000142,atorvastatin,hepatic enzymes increased,HO,20220220,46.0,M
+1000143,atorvastatin,hepatic enzymes increased,OT,20220310,47.0,F
+1000144,atorvastatin,hepatic enzymes increased,HO,20220412,48.0,M
+1000145,atorvastatin,hepatic enzymes increased,OT,20220518,49.0,F
+1000146,atorvastatin,hepatic enzymes increased,HO,20220625,50.0,M
+1000147,atorvastatin,hepatic enzymes increased,OT,20220714,51.0,F
+1000148,atorvastatin,hepatic enzymes increased,HO,20220830,52.0,M
+1000149,atorvastatin,hepatic enzymes increased,OT,20220922,53.0,F
+1000150,atorvastatin,hepatic enzymes increased,HO,20221005,54.0,M
+1000151,atorvastatin,hepatic enzymes increased,OT,20221115,55.0,F
+1000152,atorvastatin,hepatic enzymes increased,HO,20221201,56.0,M
+1000153,atorvastatin,hepatic enzymes increased,OT,20230110,57.0,F
+1000154,atorvastatin,hepatic enzymes increased,HO,20230214,58.0,M
+1000155,aspirin,gastrointestinal haemorrhage,HO,20220115,55.0,M
+1000156,aspirin,gastrointestinal haemorrhage,DE,20220220,56.0,F
+1000157,aspirin,gastrointestinal haemorrhage,HO,20220310,57.0,M
+1000158,aspirin,gastrointestinal haemorrhage,DE,20220412,58.0,F
+1000159,aspirin,gastrointestinal haemorrhage,HO,20220518,59.0,M
+1000160,aspirin,gastrointestinal haemorrhage,DE,20220625,60.0,F
+1000161,aspirin,gastrointestinal haemorrhage,HO,20220714,61.0,M
+1000162,aspirin,gastrointestinal haemorrhage,DE,20220830,62.0,F
+1000163,aspirin,gastrointestinal haemorrhage,HO,20220922,63.0,M
+1000164,aspirin,gastrointestinal haemorrhage,DE,20221005,64.0,F
+1000165,aspirin,gastrointestinal haemorrhage,HO,20221115,65.0,M
+1000166,aspirin,gastrointestinal haemorrhage,DE,20221201,66.0,F
+1000167,aspirin,gastrointestinal haemorrhage,HO,20230110,67.0,M
+1000168,aspirin,gastrointestinal haemorrhage,DE,20230214,68.0,F
+1000169,aspirin,gastrointestinal haemorrhage,HO,20230320,69.0,M
+1000170,aspirin,gastrointestinal haemorrhage,DE,20230418,70.0,F
+1000171,aspirin,dyspepsia,OT,20220115,40.0,M
+1000172,aspirin,dyspepsia,OT,20220220,41.0,F
+1000173,aspirin,dyspepsia,OT,20220310,42.0,M
+1000174,aspirin,dyspepsia,OT,20220412,43.0,F
+1000175,aspirin,dyspepsia,OT,20220518,44.0,M
+1000176,aspirin,dyspepsia,OT,20220625,45.0,F
+1000177,aspirin,dyspepsia,OT,20220714,46.0,M
+1000178,aspirin,dyspepsia,OT,20220830,47.0,F
+1000179,aspirin,dyspepsia,OT,20220922,48.0,M
+1000180,aspirin,dyspepsia,OT,20221005,49.0,F
+1000181,aspirin,dyspepsia,OT,20221115,50.0,M
+1000182,aspirin,dyspepsia,OT,20221201,51.0,F
+1000183,aspirin,dyspepsia,OT,20230110,52.0,M
+1000184,aspirin,dyspepsia,OT,20230214,53.0,F
+1000185,aspirin,dyspepsia,OT,20230320,54.0,M
+1000186,aspirin,dyspepsia,OT,20230418,55.0,F
+1000187,aspirin,dyspepsia,OT,20230522,56.0,M
+1000188,aspirin,dyspepsia,OT,20230630,57.0,F
+1000189,ibuprofen,acute kidney injury,HO,20220115,40.0,F
+1000190,ibuprofen,acute kidney injury,HO,20220220,41.0,M
+1000191,ibuprofen,acute kidney injury,HO,20220310,42.0,F
+1000192,ibuprofen,acute kidney injury,HO,20220412,43.0,M
+1000193,ibuprofen,acute kidney injury,HO,20220518,44.0,F
+1000194,ibuprofen,acute kidney injury,HO,20220625,45.0,M
+1000195,ibuprofen,acute kidney injury,HO,20220714,46.0,F
+1000196,ibuprofen,acute kidney injury,HO,20220830,47.0,M
+1000197,ibuprofen,acute kidney injury,HO,20220922,48.0,F
+1000198,ibuprofen,acute kidney injury,HO,20221005,49.0,M
+1000199,ibuprofen,acute kidney injury,HO,20221115,50.0,F
+1000200,ibuprofen,acute kidney injury,HO,20221201,51.0,M
+1000201,ibuprofen,acute kidney injury,HO,20230110,52.0,F
+1000202,ibuprofen,acute kidney injury,HO,20230214,53.0,M
+1000203,ibuprofen,acute kidney injury,HO,20230320,54.0,F
+1000204,ibuprofen,nausea,OT,20220115,25.0,F
+1000205,ibuprofen,nausea,OT,20220220,26.0,M
+1000206,ibuprofen,nausea,OT,20220310,27.0,F
+1000207,ibuprofen,nausea,OT,20220412,28.0,M
+1000208,ibuprofen,nausea,OT,20220518,29.0,F
+1000209,ibuprofen,nausea,OT,20220625,30.0,M
+1000210,ibuprofen,nausea,OT,20220714,31.0,F
+1000211,ibuprofen,nausea,OT,20220830,32.0,M
+1000212,ibuprofen,nausea,OT,20220922,33.0,F
+1000213,ibuprofen,nausea,OT,20221005,34.0,M
+1000214,ibuprofen,nausea,OT,20221115,35.0,F
+1000215,ibuprofen,nausea,OT,20221201,36.0,M
+1000216,ibuprofen,nausea,OT,20230110,37.0,F
+1000217,ibuprofen,nausea,OT,20230214,38.0,M
+1000218,ibuprofen,nausea,OT,20230320,39.0,F
+1000219,clopidogrel bisulfate,bleeding,HO,20220115,60.0,M
+1000220,clopidogrel bisulfate,bleeding,DE,20220220,61.0,F
+1000221,clopidogrel bisulfate,bleeding,HO,20220310,62.0,M
+1000222,clopidogrel bisulfate,bleeding,DE,20220412,63.0,F
+1000223,clopidogrel bisulfate,bleeding,HO,20220518,64.0,M
+1000224,clopidogrel bisulfate,bleeding,DE,20220625,65.0,F
+1000225,clopidogrel bisulfate,bleeding,HO,20220714,66.0,M
+1000226,clopidogrel bisulfate,bleeding,DE,20220830,67.0,F
+1000227,clopidogrel bisulfate,bleeding,HO,20220922,68.0,M
+1000228,clopidogrel bisulfate,bleeding,DE,20221005,69.0,F
+1000229,clopidogrel bisulfate,bleeding,HO,20221115,70.0,M
+1000230,clopidogrel bisulfate,bleeding,DE,20221201,71.0,F
+1000231,clopidogrel bisulfate,bleeding,HO,20230110,72.0,M
+1000232,clopidogrel bisulfate,bleeding,DE,20230214,73.0,F
+1000233,clopidogrel,purpura,OT,20220115,55.0,F
+1000234,clopidogrel,purpura,OT,20220220,56.0,M
+1000235,clopidogrel,purpura,OT,20220310,57.0,F
+1000236,clopidogrel,purpura,OT,20220412,58.0,M
+1000237,clopidogrel,purpura,OT,20220518,59.0,F
+1000238,clopidogrel,purpura,OT,20220625,60.0,M
+1000239,clopidogrel,purpura,OT,20220714,61.0,F
+1000240,clopidogrel,purpura,OT,20220830,62.0,M
+1000241,clopidogrel,purpura,OT,20220922,63.0,F
+1000242,clopidogrel,purpura,OT,20221005,64.0,M
+1000243,levothyroxine sodium,tachycardia,OT,20220115,30.0,F
+1000244,levothyroxine sodium,tachycardia,HO,20220220,31.0,F
+1000245,levothyroxine sodium,tachycardia,OT,20220310,32.0,M
+1000246,levothyroxine sodium,tachycardia,HO,20220412,33.0,F
+1000247,levothyroxine sodium,tachycardia,OT,20220518,34.0,F
+1000248,levothyroxine sodium,tachycardia,HO,20220625,35.0,M
+1000249,levothyroxine sodium,tachycardia,OT,20220714,36.0,F
+1000250,levothyroxine sodium,tachycardia,HO,20220830,37.0,F
+1000251,levothyroxine sodium,tachycardia,OT,20220922,38.0,M
+1000252,levothyroxine sodium,tachycardia,HO,20221005,39.0,F
+1000253,levothyroxine sodium,tachycardia,OT,20221115,40.0,F
+1000254,levothyroxine sodium,tachycardia,HO,20221201,41.0,M
+1000255,levothyroxine,palpitation,OT,20220115,30.0,F
+1000256,levothyroxine,palpitation,OT,20220220,31.0,M
+1000257,levothyroxine,palpitation,OT,20220310,32.0,F
+1000258,levothyroxine,palpitation,OT,20220412,33.0,M
+1000259,levothyroxine,palpitation,OT,20220518,34.0,F
+1000260,levothyroxine,palpitation,OT,20220625,35.0,M
+1000261,levothyroxine,palpitation,OT,20220714,36.0,F
+1000262,levothyroxine,palpitation,OT,20220830,37.0,M
+1000263,levothyroxine,palpitation,OT,20220922,38.0,F
+1000264,levothyroxine,palpitation,OT,20221005,39.0,M
+1000265,paracetamol,headache,OT,20220115,20.0,M
+1000266,paracetamol,headache,OT,20220220,21.0,F
+1000267,paracetamol,headache,OT,20220310,22.0,M
+1000268,paracetamol,headache,OT,20220412,23.0,F
+1000269,paracetamol,headache,OT,20220518,24.0,M
+1000270,paracetamol,headache,OT,20220625,25.0,F
+1000271,paracetamol,headache,OT,20220714,26.0,M
+1000272,paracetamol,headache,OT,20220830,27.0,F
+1000273,paracetamol,headache,OT,20220922,28.0,M
+1000274,paracetamol,headache,OT,20221005,29.0,F
+1000275,amoxicillin,rash,OT,20220115,10.0,M
+1000276,amoxicillin,rash,OT,20220220,11.0,F
+1000277,amoxicillin,rash,OT,20220310,12.0,M
+1000278,amoxicillin,rash,OT,20220412,13.0,F
+1000279,amoxicillin,rash,OT,20220518,14.0,M
+1000280,amoxicillin,rash,OT,20220625,15.0,F
+1000281,omeprazole,headache,OT,20220115,40.0,F
+1000282,omeprazole,headache,OT,20220220,41.0,M
+1000283,omeprazole,headache,OT,20220310,42.0,F
+1000284,omeprazole,headache,OT,20220412,43.0,M
+1000285,omeprazole,headache,OT,20220518,44.0,F

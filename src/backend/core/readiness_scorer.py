@@ -251,6 +251,8 @@ class ModuleScore:
             "not_applicable_count": self.not_applicable_count,
             "critical_missing_count": self.critical_missing_count,
             "penalty_applied": round(self.penalty_applied, 4),
+            "section_details": self.section_details,
+            "section_results": self.section_details,
         }
 
 

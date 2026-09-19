@@ -63,12 +63,19 @@ export interface TrendResponse {
 
 // Dossier / CTD types
 export interface SectionResult {
-  ctd_section_id: string
-  ctd_section_title: string
+  section_id?: string
+  section_title?: string
+  ctd_section_id?: string
+  ctd_section_title?: string
   status: 'PRESENT' | 'NEEDS_REVIEW' | 'MISSING' | 'NOT_APPLICABLE'
-  required: boolean
+  required?: boolean
+  requirement?: string
   safety_relevant: boolean
+  weight?: number
+  earned?: number
+  is_critical?: boolean
   match_score?: number
+  match_reason?: string
   relevance_reason?: string
 }
 
@@ -76,12 +83,18 @@ export interface ModuleScore {
   module_id: string
   module_title: string
   score: number
+  score_pct?: number
+  raw_ratio?: number
+  possible_weight?: number
+  earned_weight?: number
   present_count: number
   needs_review_count: number
   missing_count: number
   not_applicable_count: number
   critical_missing_count: number
-  section_results: SectionResult[]
+  penalty_applied?: number
+  section_results?: SectionResult[]
+  section_details?: SectionResult[]
 }
 
 export interface ReadinessResponse {

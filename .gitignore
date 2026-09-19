@@ -83,7 +83,7 @@ demo/*.avi
 demo/*.mkv
 
 # ── Docker volumes / local data ───────────────────────────────────────────────
-data/
+# data/ (commented out to track bundled demo & knowledge base datasets)
 logs/
 *.log
 
